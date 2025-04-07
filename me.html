@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>芊慈的個人頁面</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/rabbit.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    html,body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    body {
+      position: relative;
+      
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .big-bg{
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      color: rgb(96, 81, 65);
+    }
+    #home {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      background-image: url("./images/mee3.jpg");
+    }
+    .home-content {
+      text-align: center;
+    }
+    .nav-link {
+      background-color: #FFEFE1;
+      border-radius: 5px;
+      color: rgb(96, 81, 65);
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .nav-link:hover {
+      color: #D2AC89;
+    }
+    .section {
+      padding: 100px 20px;
+      background-color:#C9BDAE;
+
+    }
+    .progress-bar {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      background: linear-gradient(to right, #ff9090, #ffc800);
+    }
+    .home-content{
+      text-align: center;
+      margin-top: 10%;
+    }
+    .home-content p{
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin: 10px 0 42px;
+    }
+    h1,h2{
+      color: rgb(96, 81, 65);
+      font-weight: bold;
+    }
+    h3,h4,h5{
+      color: rgb(96, 78, 60);
+      font-weight: bold;
+    }
+
+    p{
+      color:#563C2B;
+
+    }
+    .container{
+      background-color: #FFEFE1;
+    }
+    table,td{
+      color:#563C2B;
+      font-weight: bold;
+      background-color:rgb(255, 255, 255);
+    }
+    .responsive-image {
+      max-width: 100%;
+      height: auto;
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; 
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    a {
+      text-decoration: none;
+      color: #5c3f24;
+    }
+    a :hover{
+      color: rgb(193, 140, 89);
+    }
+  </style>
+</head>
+<body>
+  <div id="home" class="big-bg">
+    <header class="page-header wrapper">
+      <nav>
+        <ul class="nav justify-content-center">
+          <li class="nav-item"></li>
+            <a class="nav-link" href="#section1">關於我</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">興趣作品展示</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">我的經歷</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section4">專業技能</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section5">專案作品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section6">活動照片</a>
+          </li>
+        </ul>
+      </nav><br>
+    </header>
+  </div>
+
+  <div id="section1" class="section">
+    <div class="container"><br>
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <img src="./images/me1 (1).jpg" class="img-thumbnail" alt="我的照片" width="200px">
+          <div class="social-icons mt-2">
+            <a href="https://www.facebook.com/profile.php?id=100001575986367" target="_blank" >
+              <i class="fa-brands fa-facebook" >
+                <img src="./images/facebook.svg" width="40" height="40" viewBox="0 0 24 24">
+              </i>
+              <span> 陳芊慈</span>
+            </a><br><br>
+            <a href="https://www.instagram.com/chiencze_0610/" target="_blank">
+              <i class="fab fa-instagram">
+                <img src="./images/instagram.svg" width="40" height="40" viewBox="0 0 24 24">
+              </i>
+              <span>chiencze_0610</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="container mt-3">
+            <h1><b>Hi,我叫陳芊慈</b></h1>
+            <p>今年21歲，就讀聯合大學資訊管理學系三年級。</p>
+            <p>個性隨和開朗，想法很跳躍，情緒也是來的快去得快，喜歡和人聊天交流和接觸新事物。</p>
+            <p>很高興認識你！</p>
+            <table class="table table-hover" >
+              <tbody>
+                <tr>
+                  <td>名字</td>
+                  <td>陳芊慈</td>
+                </tr>
+                <tr>
+                  <td>學校</td>
+                  <td>目前就讀國立聯合大學大三</td>
+                </tr>
+                <tr>
+                  <td>主修專業</td>
+                  <td>資訊管理學系</td>
+                </tr>
+                <tr>
+                  <td>興趣</td>
+                  <td>唱歌、追劇、攝影、手工藝、花、睡覺、吃甜點</td>
+                </tr>
+                <!-- <tr>
+                  <td>目標</td>
+                  <td>早日實現財富自由，然後全球玩透透。</td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div><br>
+    </div>
+  </div>
+
+  <div id="section2" class="section">
+    <div class="container"><br>
+      <center>
+        <h2><b>以下是我的興趣作品展示</b></h2>
+      </center>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card bg-light">
+            <img class="card-img-top" src="./images/flower.jpg">
+            <div class="card-body">
+              <h5 class="card-title">擴香熊熊花</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-light">
+            <img class="card-img-top" src="./images/flower2.jpg">
+            <div class="card-body">
+              <h5 class="card-title">浮游花瓶</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-light">
+            <img class="card-img-top" src="./images/cute2.jpg">
+            <div class="card-body">
+              <h5 class="card-title">小熊&花戒指</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-light">
+            <img class="card-img-top" src="./images/cute.jpg">
+            <div class="card-body">
+              <h5 class="card-title">拼豆</h5>
+            </div>
+          </div>
+        </div>
+      </div><br>
+    </div>
+  </div>
+
+  <div id="section3" class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <div class="container mt-3">
+              <h1><b>我的經歷</b></h1>
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" data-bs-toggle="tab" href="#work">實習與工作</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#school">學校經歷</a>
+              </li>
+            </ul>
+            <div class="tab-content mt-3">
+              <div id="work" class="tab-pane fade show active">
+                <table class="table table-hover" style="font-weight: bold; background-color:rgb(252, 250, 247);">
+                  <thead>
+                    <tr>
+                      <td></td>
+                      <td>地點</td>
+                      <td>職位</td>
+                      <td>時間</td>
+                      <td>職責</td>
+                    </tr>
+                  </thead>
+                  <tbody>  
+                    <tr>
+                      <td>1.</td>
+                      <td>桃園市文化局秘書室</td>
+                      <td>暑期實習工讀生</td>
+                      <td>2022年7月 - 2022年8月</td>
+                      <td>公文編目等文書處理</td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>初玖早午餐</td>
+                      <td>星期日工讀生</td>
+                      <td>2023年3月 - 2023年9月</td>
+                      <td>內外場的工作</td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td>程澈科技公司</td>
+                      <td>工讀生</td>
+                      <td>2024年7月 - 2025年4月</td>
+                      <td>測試程式</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4>桃園市文化局秘書室暑期實習工讀</h4>
+                <p>在文化局的工作中，我學會了處理文書和文件的技巧，並培養了更大的耐心和細心整理資料的能力。<br>
+                還有幸能與那裡的資深同事一同工作，這種團隊合作的經驗令我印象深刻。彼此相互配合、共同努力，工作效率得到了明顯提升。</p>
+                
+                <p>真的很開心能遇到這些哥哥姊姊們！學習到很多新的事物！</p>
+                <h5>文化局秘書室暑期工讀大合照</h5>
+                <img src="images/active2.jpg" alt="文化局秘書室暑期工讀大合照" class="responsive-image"><br><br><br><br>
+
+                <h4>初玖早午餐</h4>
+                <p>在早午餐店的工作中，我不僅學會了應對人群時保持冷靜和不緊張，還訓練了處理客人需求和臨場反應的能力。<br>
+                  同時，我也有機會向老闆和老闆娘學習廚房和烹飪方面的知識，這讓我對廚藝有了更深入的了解。</p>
+    
+                  <p>這些工作經驗帶給我許多收穫，讓我更清楚自己的興趣和志向，加深了對自己的認識。<br>
+                  我從中學到了如何更好地與他人溝通合作，並在工作中保持高效率。</p>
+    
+                  <p>這些經驗都讓我收益良多，更清楚自己喜歡和想要做什麼，更加了解自己，也為我的個人和專業發展提供了寶貴的基礎。</p>
+    
+                <div class="social-icons mt-2">
+                  <a href="https://www.facebook.com/p/%E5%88%9D%E7%8E%96CHU-JIU-100076302795388/?paipv=0&eav=AfZ8aaICNy-65Ne98UpTWTFmX5nlwJzfQXkR0joxA5WRjV1Mn02hPnjTri3nU9YSSQ0&_rdr" target="_blank">
+                    <i class="fab fa-facebook">
+                      <img src="./images/facebook.svg" width="40" height="40" viewBox="0 0 24 24">
+                    </i>
+                    <span>初玖早午餐</span>
+                  </a>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628.7460761819957!2d120.81491467579649!3d24.563435457077876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469ad2c5681c01b%3A0x3dae7bfda822d336!2z5Yid546W5pep5Y2I6aSQ!5e0!3m2!1szh-TW!2stw!4v1687079258521!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+                <br><br>
+                <h4>程澈科技公司</h4>
+                <div class="social-icons mt-2">
+                  <a href="https://clearsoft.cc/aboutus.php" target="_blank">
+                    <i class="fab fa-facebook">
+                      <img src="./images/facebook.svg" width="40" height="40" viewBox="0 0 24 24">
+                    </i>
+                    <span>程澈科技公司</span>
+                  </a>
+                </div>
+                <p>
+
+                </p>
+                <br><br>
+              </div>
+              <div id="school" class="tab-pane fade">
+                <table class="table table-hover" style="font-weight: bold; background-color:rgb(252, 250, 247);">
+                  <thead>
+                    <tr>
+                      <td>時期</td>
+                      <td>學校</td>
+                      <td>擔任的幹部</td>
+                      <td>參加的社團</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>國中</td>
+                      <td>中興國中</td>
+                      <td>環保股長</td>
+                      <td>管樂團</td>
+                    </tr>
+                    <tr>
+                      <td>高中</td>
+                      <td>永豐高中</td>
+                      <td>副班長、大傳社文書</td>
+                      <td>大傳社</td>
+                    </tr>
+                    <tr>
+                      <td>大學</td>
+                      <td>聯合大學</td>
+                      <td>學藝</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>透過參與這些社團，我得以體驗到無限的成長和學習機會。<br>
+                  在這裡我不僅提升了我的抗壓能力和團隊合作能力，還學習到了許多不同的才藝技能，例如豎笛演奏和影劇表演等。<br>
+                  透過與各種不同背景的同學們一同合作，我們共同追求著共同的目標，演奏出一首首美妙的樂曲，創作出一部部精彩的影片作品。</p>
+                <p>在社團裡我們每個人都扮演著不同的角色，並且共同努力，以完成一項作品。<br>
+                  這種合作過程不僅培養了我的團隊合作精神，還讓我學會欣賞不同人的才華和貢獻。</p>
+                <p>這些社團活動成為了我人生中寶貴的一部分，它們不僅在技能上給予了我豐富的養分，更讓我建立了深厚的人際關係和珍貴的回憶。<br>
+                  我相信這樣的經歷將繼續影響和啟發著我，使我成為一個更好更負責任的人。<br>
+                <p>這些經歷不僅讓我在技能上有所成長，也培養了我的領導能力、團隊合作和溝通能力。</p>
+                <h4>這是高中成發的舞台劇，我擔任導演。</h4>
+                <div class="video-container">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/UBNfaqhxm2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div><br><br>
+                <h4>這是我們社團拍的影片，實在是很荒謬的劇情，當時擔任演員。</h4>
+                <div class="video-container">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Z7lzaviDKnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <p>還有許多的作品不過沒有上傳到youtube</p>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+  <!-- <div id="section4" class="section">
+    <div class="container"><br>
+      <h1><b>我的資管技能評分條</b></h1>
+      <p>根據我在資管系學習到的技能評估，認識到自己的能力尚有許多的進步空間。</p>
+      <p>我相信持續努力是成長的關鍵，之後會繼續努力資管領域的技能！</p>
+      <p><b>程式語言</b></p>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+          <span class="visually-hidden">50%</span>
+        </div>
+      </div><br>
+      <p><b>資料庫管理</b></p>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+          <span class="visually-hidden">70%</span>
+        </div>
+      </div><br>
+      <p><b>網頁開發</b></p>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+          <span class="visually-hidden">90%</span>
+        </div>
+      </div><br>
+      <p><b>網路管理</b></p>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+          <span class="visually-hidden">70%</span>
+        </div>
+      </div><br>
+      <p><b>會計學</b></p>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+          <span class="visually-hidden">70%</span>
+        </div>
+      </div><br>
+      <p><b>管理知識</b></p>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+          <span class="visually-hidden">80%</span>
+        </div>
+      </div><br>
+      <br><br>
+    </div>
+  </div> -->
+  
+  <div id="section5" class="section">
+    <div class="container"><br>
+      <h1><b>專案作品展示</b></h1>
+      <h3>資料庫的期末專題—宿舍點名系統</h3>
+      
+      <p>大二下學期的期末我做了一個宿舍點名系統，用於宿舍點名。<br>
+        此次專案目標在於記錄和管理學生的出勤情況，包括出席、缺席等情況。<br>
+        有三個權限，包含學生、管理者和家長。</p>
+      
+      <h4>↓ 這是專案的流程圖</h4>
+      <img src="images/流程圖.png" alt="流程圖" class="responsive-image"><br><br>
+      <h4>這是系統操作的說明影片</h4>
+      <p>(抱歉雜音很多......)</p>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2dB-recoyds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div><br>
+    </div>
+  </div>
+
+  <div id="section6" class="section">
+    <div class="container"><br>
+      <h1><b>近期活動的照片們</b></h1>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/active.jpg" class="d-block w-100" alt="班級聚會烤肉">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>班級聚會烤肉</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/active4.jpg" class="d-block w-100" alt="資管之夜">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>資管之夜</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/active3.jpg" class="d-block w-100" alt="葡萄王企業參訪">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>葡萄王企業參訪</h5>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div><br>
+    </div>
+  </div>
+</body>
+</html>
