@@ -4,11 +4,11 @@
   <title>芊慈的個人頁面</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="./images/rabbit.png" type="image/png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="icon" href="images/rabbit.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <style>
-    html,body {
+    html, body {
       height: 100%;
       margin: 0;
       padding: 0;
@@ -16,30 +16,45 @@
     }
     body {
       position: relative;
-      
       background-repeat: no-repeat;
-      position: relative;
     }
-    .big-bg{
+    .big-bg {
+      background-image: url("./images/mee3.jpg");
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;
-      color: rgb(96, 81, 65);
-    }
-    #home {
-      height: 100%;
+      height: 100vh;
       display: flex;
       justify-content: center;
-      background-image: url("./images/mee3.jpg");
-    }
-    .home-content {
+      align-items: center;
+      color: rgb(96, 81, 65);
       text-align: center;
+    }
+    .custom-navbar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: auto;
+      width: auto;
+      border-radius: 0 0 0 12px;
+      background-color: #ffefe0 !important;
+    }
+    .custom-navbar .nav-link {
+      background-color: #c49b72; /* 咖色偏亮，滑過效果 */
+      border-radius: 8px;
+      color: white !important;
+      font-weight: bold;
+      padding: 8px 15px;
+    }
+    .custom-navbar .nav-link:hover {
+      background-color: #9d7b58;
+      border-radius: 8px;
     }
     .nav-link {
       background-color: #FFEFE1;
       border-radius: 5px;
       color: rgb(96, 81, 65);
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
     }
     .nav-link:hover {
@@ -47,103 +62,56 @@
     }
     .section {
       padding: 100px 20px;
-      background-color:#C9BDAE;
-
+      background-color: #C9BDAE;
     }
     .progress-bar {
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       border-radius: 5px;
       background: linear-gradient(to right, #ff9090, #ffc800);
     }
-    .home-content{
-      text-align: center;
-      margin-top: 10%;
-    }
-    .home-content p{
-      font-weight: bold;
-      font-size: 1.5rem;
-      margin: 10px 0 42px;
-    }
-    h1,h2{
-      color: rgb(96, 81, 65);
-      font-weight: bold;
-    }
-    h3,h4,h5{
-      color: rgb(96, 78, 60);
-      font-weight: bold;
-    }
-
-    p{
-      color:#563C2B;
-
-    }
-    .container{
+    .container {
       background-color: #FFEFE1;
     }
-    table,td{
-      color:#563C2B;
-      font-weight: bold;
-      background-color:rgb(255, 255, 255);
-    }
-    .responsive-image {
-      max-width: 100%;
-      height: auto;
-    }
-    .video-container {
-      position: relative;
-      width: 100%;
-      height: 0;
-      padding-bottom: 56.25%; 
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-    a {
-      text-decoration: none;
-      color: #5c3f24;
-    }
-    a :hover{
-      color: rgb(193, 140, 89);
-    }
+    h1, h2 { color: rgb(96, 81, 65); font-weight: bold; }
+    h3, h4, h5 { color: rgb(96, 78, 60); font-weight: bold; }
+    p { color: #563C2B; }
+    table, td { color: #563C2B; font-weight: bold; background-color: white; }
+    .responsive-image { max-width: 100%; height: auto; }
+    .video-container { position: relative; width: 100%; height: 0; padding-bottom: 56.25%; }
+    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    a { text-decoration: none; color: #5c3f24; }
+    a:hover { color: rgb(193, 140, 89); }
+    
   </style>
 </head>
 <body>
-  <div id="home" class="big-bg">
-    <header class="page-header wrapper">
-      <nav>
-        <ul class="nav justify-content-center">
-          <li class="nav-item"></li>
-            <a class="nav-link" href="#section1">關於我</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section2">興趣作品展示</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section3">我的經歷</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section4">專業技能</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section5">專案作品</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section6">活動照片</a>
-          </li>
+  <!-- 背景封面區塊 -->
+  <div class="big-bg"></div>
+
+  <!-- 固定在右上角的導覽列 -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm custom-navbar">
+    <div class="container-fluid justify-content-end">
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#section1">關於我</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section2">我的經歷</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section3">專案作品</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section4">專業技能</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section5">興趣作品展示</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section6">活動照片</a></li>
         </ul>
-      </nav><br>
-    </header>
-  </div>
+      </div>
+    </div>
+  </nav>
 
   <div id="section1" class="section">
     <div class="container"><br>
       <div class="row justify-content-center">
         <div class="col-md-3">
-          <img src="./images/me1 (1).jpg" class="img-thumbnail" alt="我的照片" width="200px">
+          <img src="./images/me.jpg" class="img-thumbnail" alt="我的照片" width="200px">
           <div class="social-icons mt-2">
             <a href="https://www.facebook.com/profile.php?id=100001575986367" target="_blank" >
               <i class="fa-brands fa-facebook" >
@@ -196,48 +164,6 @@
   </div>
 
   <div id="section2" class="section">
-    <div class="container"><br>
-      <center>
-        <h2><b>以下是我的興趣作品展示</b></h2>
-      </center>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card bg-light">
-            <img class="card-img-top" src="./images/flower.jpg">
-            <div class="card-body">
-              <h5 class="card-title">擴香熊熊花</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card bg-light">
-            <img class="card-img-top" src="./images/flower2.jpg">
-            <div class="card-body">
-              <h5 class="card-title">浮游花瓶</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card bg-light">
-            <img class="card-img-top" src="./images/cute2.jpg">
-            <div class="card-body">
-              <h5 class="card-title">小熊&花戒指</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card bg-light">
-            <img class="card-img-top" src="./images/cute.jpg">
-            <div class="card-body">
-              <h5 class="card-title">拼豆</h5>
-            </div>
-          </div>
-        </div>
-      </div><br>
-    </div>
-  </div>
-
-  <div id="section3" class="section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-12">
@@ -388,6 +314,26 @@
       </div>
     </div>
   </div>
+
+  <div id="section3" class="section">
+    <div class="container"><br>
+      <h1><b>專案作品展示</b></h1>
+      <h3>資料庫的期末專題—宿舍點名系統</h3>
+      
+      <p>大二下學期的期末我做了一個宿舍點名系統，用於宿舍點名。<br>
+        此次專案目標在於記錄和管理學生的出勤情況，包括出席、缺席等情況。<br>
+        有三個權限，包含學生、管理者和家長。</p>
+      
+      <h4>↓ 這是專案的流程圖</h4>
+      <img src="images/流程圖.png" alt="流程圖" class="responsive-image"><br><br>
+      <h4>這是系統操作的說明影片</h4>
+      <p>(抱歉雜音很多......)</p>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2dB-recoyds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div><br>
+    </div>
+  </div>
+
   <div id="section4" class="section">
     <div class="container"><br>
       <h1><b>我的資管技能評分條</b></h1>
@@ -433,21 +379,46 @@
     </div>
   </div>
   
+  
+
   <div id="section5" class="section">
     <div class="container"><br>
-      <h1><b>專案作品展示</b></h1>
-      <h3>資料庫的期末專題—宿舍點名系統</h3>
-      
-      <p>大二下學期的期末我做了一個宿舍點名系統，用於宿舍點名。<br>
-        此次專案目標在於記錄和管理學生的出勤情況，包括出席、缺席等情況。<br>
-        有三個權限，包含學生、管理者和家長。</p>
-      
-      <h4>↓ 這是專案的流程圖</h4>
-      <img src="images/流程圖.png" alt="流程圖" class="responsive-image"><br><br>
-      <h4>這是系統操作的說明影片</h4>
-      <p>(抱歉雜音很多......)</p>
-      <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2dB-recoyds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <center>
+        <h2><b>以下是我的興趣作品展示</b></h2>
+      </center>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card bg-light">
+            <img class="card-img-top" src="./images/flower.jpg">
+            <div class="card-body">
+              <h5 class="card-title">擴香熊熊花</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-light">
+            <img class="card-img-top" src="./images/flower2.jpg">
+            <div class="card-body">
+              <h5 class="card-title">浮游花瓶</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-light">
+            <img class="card-img-top" src="./images/cute2.jpg">
+            <div class="card-body">
+              <h5 class="card-title">小熊&花戒指</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-light">
+            <img class="card-img-top" src="./images/cute.jpg">
+            <div class="card-body">
+              <h5 class="card-title">拼豆</h5>
+            </div>
+          </div>
+        </div>
       </div><br>
     </div>
   </div>
